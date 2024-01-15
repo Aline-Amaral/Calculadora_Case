@@ -8,6 +8,7 @@ public class Calculadora {
             case '+': operacao.resultado= soma(operacao);break;
             case '-': operacao.resultado = subtracao(operacao);break;
             case '*': operacao.resultado = multiplicacao(operacao);break;
+            case '/': operacao.resultado = divisao(operacao);break;
             default: operacao.resultado = 0; break;
         }
         return operacao;
@@ -23,5 +24,9 @@ public class Calculadora {
     public int multiplicacao(Operacoes operacao)
     {
         return operacao.valorA * operacao.valorB;
+    }
+    public double divisao(Operacoes operacao)
+    {
+        return (double) operacao.valorA / operacao.valorB;
     }
 }
