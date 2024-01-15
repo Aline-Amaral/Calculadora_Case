@@ -13,17 +13,17 @@ public class Calculadora {
         }
         return operacao;
     }
-    public int soma(Operacoes operacao)
+    public Long soma(Operacoes operacao)
     {
-        return operacao.valorA + operacao.valorB;
+        return (long) operacao.valorA + operacao.valorB;
     }
     public int subtracao(Operacoes operacao)
     {
         return operacao.valorA - operacao.valorB;
     }
-    public int multiplicacao(Operacoes operacao)
+    public Long multiplicacao(Operacoes operacao)
     {
-        return operacao.valorA * operacao.valorB;
+        return (long) operacao.valorA * operacao.valorB;
     }
     public double divisao(Operacoes operacao)
     {
