@@ -11,7 +11,7 @@ public class Main {
         filaOperacoes.add(new Operacoes (14, 8, '-'));
         filaOperacoes.add(new Operacoes (5, 6, '*'));
         filaOperacoes.add(new Operacoes (2147483647, 2, '+'));
-        filaOperacoes.add(new Operacoes (18, 3, '/')); //Implemente o calculo de divisao
+        filaOperacoes.add(new Operacoes (18, 3, '/'));
 
         Calculadora calculadora = new Calculadora();
 
