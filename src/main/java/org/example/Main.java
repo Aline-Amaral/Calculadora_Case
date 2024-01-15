@@ -18,10 +18,10 @@ public class Main {
 
         while (!filaOperacoes.isEmpty())
         {
-            Operacoes operacao = filaOperacoes.peek();
+            Operacoes operacao = filaOperacoes.poll();
             calculadora.calcular(operacao);
             System.out.println(operacao.getValorA() + " " + operacao.getOperador() +  " " + operacao.getValorB() + " = " + operacao.getResultado());
-            filaOperacoes.remove(operacao);
+            filaOperacoes.iterator().forEachRemaining(item -> System.out.println("Operação remanescente: " + item.valorA + " " + item.operador +  " " + item.valorB));
         }
     }
 }
