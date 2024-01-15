@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,14 +16,14 @@ public class Main {
 
         Calculadora calculadora = new Calculadora();
 
-        Queue<Long> filaResultados = new ArrayDeque<>();
+        Stack<Object> filaResultados = new Stack<>();
 
         while (!filaOperacoes.isEmpty())
         {
             Operacoes operacao = filaOperacoes.poll();
             calculadora.calcular(operacao);
             System.out.println(operacao.getValorA() + " " + operacao.getOperador() +  " " + operacao.getValorB() + " = " + operacao.getResultado());
-            filaResultados.add((long) operacao.getResultado());
+            filaResultados.push(operacao.getResultado());
             filaOperacoes.iterator().forEachRemaining(item -> System.out.println("Operação remanescente: " + item.valorA + " " + item.operador +  " " + item.valorB));
         }
 
