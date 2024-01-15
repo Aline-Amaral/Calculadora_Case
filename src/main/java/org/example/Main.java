@@ -15,13 +15,17 @@ public class Main {
 
         Calculadora calculadora = new Calculadora();
 
+        Queue<Long> filaResultados = new ArrayDeque<>();
 
         while (!filaOperacoes.isEmpty())
         {
             Operacoes operacao = filaOperacoes.poll();
             calculadora.calcular(operacao);
             System.out.println(operacao.getValorA() + " " + operacao.getOperador() +  " " + operacao.getValorB() + " = " + operacao.getResultado());
+            filaResultados.add((long) operacao.getResultado());
             filaOperacoes.iterator().forEachRemaining(item -> System.out.println("Operação remanescente: " + item.valorA + " " + item.operador +  " " + item.valorB));
         }
+
+        filaResultados.iterator().forEachRemaining(item -> System.out.println("Resultado: " + item));
     }
 }
