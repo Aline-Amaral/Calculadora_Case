@@ -16,11 +16,12 @@ public class Main {
         Calculadora calculadora = new Calculadora();
 
 
-        while (filaOperacoes.size() >= 0)
+        while (!filaOperacoes.isEmpty())
         {
             Operacoes operacao = filaOperacoes.peek();
             calculadora.calcular(operacao);
             System.out.println(operacao.getValorA() + " " + operacao.getOperador() +  " " + operacao.getValorB() + " = " + operacao.getResultado());
+            filaOperacoes.remove(operacao);
         }
     }
 }
