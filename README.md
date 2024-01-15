@@ -1,14 +1,14 @@
-Calculadora
+**Calculadora**
 
 Case para Engenharia de Software JR
 
 Você precisa corrigir os seguintes problemas no codigo:
 
-    Aplicação só está processando o primeiro item da fila infinitamente.
+1. Aplicação só está processando o primeiro item da fila infinitamente.
 
-    Implemente a funcionalidade de divisão.
+2. Implemente a funcionalidade de divisão.
 
-    Aplicação não está calculando a penultima operação corretamente.
+3. Aplicação não está calculando a penultima operação corretamente.
 
     Saída esperada no console:
 
@@ -20,6 +20,6 @@ Você precisa corrigir os seguintes problemas no codigo:
 
        18 / 3 = 6
 
-Implemente uma funcionalidade para imprimir toda a lista de operaçõoes a ser processada após cada calculo realizado.
+4. Implemente uma funcionalidade para imprimir toda a lista de operaçõoes a ser processada após cada calculo realizado.
 
-Crie uma nova pilha (Stack) para guardar o resultado de cada calculo efetuado e imprima a pilha ao final
+5. Crie uma nova pilha (Stack) para guardar o resultado de cada calculo efetuado e imprima a pilha ao final
